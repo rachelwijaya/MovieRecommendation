@@ -93,7 +93,8 @@ def kNN():
     NearestNeighbors(algorithm='brute', leaf_size=30, metric='cosine', metric_params=None, n_jobs=None, n_neighbors=4,
                      p=1.5, radius=1.0)
 
-    index = int(input("Enter movie ID: "))
+    user_movie = input("Please enter a movie: ")
+    index = movie_features_pivot.index.get_loc(user_movie)
     distances, indices = model_knn.kneighbors(movie_features_pivot.iloc[index, :].values.reshape(1, -1), n_neighbors=6)
 
     for i in range(0, len(distances.flatten())):
