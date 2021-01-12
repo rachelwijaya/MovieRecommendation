@@ -33,9 +33,11 @@ print("\nCosine Similarity compares the frequency of movies that")
 print("appear in other users in order to assume their similarity")
 print("to your input")
 
-# Make a recommendation
+# Make a recommendation.
 # sample input for Cally to insert = [("Amazing Spider-Man, The (2012)",5),("Mission: Impossible III (2006)",4),("Toy Story 3 (2010)",2),("2 Fast 2 Furious (Fast and the Furious 2, The) (2003)",4)]
-print("\nNOTE: input format, please enter movie name then the rating(out of 5)")
+print("\nNOTE!!!")
+print("Input format: Enter movie title followed by the rating (out of 5)")
+
 movie_lst = []
 n = int(input("Enter number of movies you want to rate : "))
 
